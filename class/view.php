@@ -10,7 +10,7 @@ class view extends config{
         $data->execute();  
          $result = $data->fetchAll(PDO::FETCH_ASSOC);
          echo "<h3 class='mb-4'>Pending Task</h3>";
-         echo "<table class='table table-dark table-striped table-sm'>";
+         echo "<table class='table   table-striped table-sm float-right'>";
          echo"<thead>
          <tr>
          <th> Task Item</th>
@@ -23,7 +23,7 @@ class view extends config{
              echo "<td>$data[items]</td>";
              
              echo "<td>
-             <a class='btn btn-info btn-sm ' href='index.php?edit=$data[id]'>Mark as Completed</a>";
+             <a class='btn btn-info btn-sm mr-2 ' href='index.php?edit=$data[id]'>Mark as Completed</a>";
              echo "<a class='btn btn-danger btn-sm' href='index.php?delete=$data[id]'>Delete Task</a>
              </td>";
              echo "</tr>";
@@ -41,7 +41,7 @@ class view extends config{
         $data->execute();  
          $result = $data->fetchAll(PDO::FETCH_ASSOC);
          echo "<h3 class='mb-4 mt-5'>Completed Task</h3>";
-         echo "<table class='table table-dark table-striped table-sm'>";
+         echo "<table class='table   table-striped table-sm'>";
          echo"<thead>
          <tr>
          <th> Task Item</th>

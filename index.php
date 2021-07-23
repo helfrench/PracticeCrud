@@ -69,7 +69,7 @@ generalFunction();
           <input class="form-control" type="text" name="items" placeholder="Enter the list to do...." required/>
         </div>
         <div class="col-md-2">
-          <input class="btn btn-success" type="submit" value="Add Lang"/>
+          <input class="btn btn-warning" type="submit" value="Add Lang"/>
         </div>
       </div>
   </form> 
