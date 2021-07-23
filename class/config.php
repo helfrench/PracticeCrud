@@ -12,7 +12,7 @@ class config
         try {
             $this->pdo = new PDO('mysql:host=localhost;dbname=inventory', $this->user, $this->password);
 
-           echo "Database Connected";
+          // echo "Database Connected";
             } 
             catch (\PDOException $e) 
             {
